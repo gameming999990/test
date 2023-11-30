@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- เพิ่มลิงก์ไปยัง SweetAlert CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <title>Test work submission</title> 
+ </head> 
+ <body> 
+  <section class="main-content"> 
+<p> <input type="text" name="answer" placeholder="ชื่อ-นามสกุล ชั้น เลขที่" style="border: none; border-bottom: 1px solid #ccc; outline: none; color:#DC143C; max-width: 230px; width: 80%;" ></p>
+   <h2>   <img class="activity-image" src="https://cdn.discordapp.com/attachments/1114928674731474966/1179421760018460772/1701265872291.png?ex=6579b91c&is=6567441c&hm=08a1cba48f641cb23e075f4f007d7af15065f8b996511ee50fb46112c2a6ddea" alt="htl"> • กิจกรรมท้ายบท</h2> 
+   <h3>แบบฝึกหัดท้ายบทที่ 6.5 ลิขสิทธิ์ ใช้อย่างไรให้ถูกต้อง</h3>
+
+   <h3 class="special-paragraph">คำสั่ง ให้นักเรียนพิจารณา บัตรสถานการณ์ที่ได้รับ แล้วตอบคำถาม<h3>
+  <br>
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <label for="imageInput" style="cursor: pointer;">
+        <span>Add img</span>
+        <input type="file" accept="image/*" id="imageInput" style="display: none;" onchange="uploadImage()" />
+    </label>
+    <img id="uploadedImage" src="#" alt="เพิ่มรูปภาพ" style="margin-top: 30px; display: none; margin: 10px;" />
+</div>
+
+<script>
+function uploadImage() {
+   const input = document.getElementById('imageInput');
+   const img = document.getElementById('uploadedImage');
+   const file = input.files[0];
+
+   if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+         img.src = e.target.result;
+         img.style.display = 'block';  // เพิ่มบรรทัดนี้เพื่อแสดงรูป
+      };
+      reader.readAsDataURL(file);
+   }
+}
+</script>
+  <script src="script.js"></script>
+
+     
+   <p class="h42">1.&nbsp;บัตรสถานการณ์ที่ได้รับ คือ <input type="text" name="answer" placeholder="ตอบไรดี?" style="width: 80%; border: none; border-bottom: none; outline: none; color: #DC143C;"></p>
+   <p class="h43">2.&nbsp;การกระทําของตัวละครในบัตรสถานการณ์ที่ได้รับ มีลักษณะใดบ้าง<br>&nbsp;&nbsp;&nbsp;ตัวละครในสถานการณ์ คือ<input type="text" name="answer" placeholder="ตอบไรดี?" style="width: 80%; border: none; border-bottom: none; outline: none; color:#DC143C" ><b class="red-text3"></b></p>
+   
+   <p class="h42">*&nbsp;หารายได้จากการกระทําดังกล่าว
+   <label><input type="checkbox" name="income_question[]" value="yes"> ใช่</label>
+   <label><input type="checkbox" name="income_question[]" value="no"> ไม่ใช่</label>
+   <label><input type="checkbox" name="income_question[]" value="not_specified" checked> ไม่ระบุ</label></p>
+
+   <p class="h42">*&nbsp;เจ้าของผลงานสูญเสียรายได้
+   <label><input type="checkbox" name="loss[]" value="no_impact"> ไม่มีผลกระทบ</label>
+   <label><input type="checkbox" name="loss[]" value="financial_loss">สูญเสียรายได้</label></p>
+
+   <p class="h42">*&nbsp;ปริมาณที่นํามาใช้  
+   <label><input type="checkbox" name="quantity[]" value="appropriate"> เหมาะสม</label>
+   <label><input type="checkbox" name="quantity[]" value="excessive"> มากเกินไป</label></p>
+
+   <p class="h42">*&nbsp;การอ้างอิง
+   <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="citation[]" value="yes"> มี</label>
+   <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="citation[]" value="no"> ไม่มี</label></p>
+
+   <p class="h42">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จากสถานการณ์นักเรียนคิดว่าเป็นการใช้งานลิขสิทธิ์ที่เป็นธรรม&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หรือเป็นการละเมิดลิขสิทธิ์ เพราะเหตุใด<b class="red-text">&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<textarea name="answer" placeholder="ตอบไรดี?" style="width: 80%; border: none; outline: none; color: #DC143C;  line-height: 2; resize: vertical;"></textarea></p>
+
+        <br>
+      <br>
+     <br>
+     <br>
+     <br>
+<center><button type="button" onclick="downloadImage()"> ดาวน์โหลด</button></center>
+  </section> 
+
+
+
+<script src="l.js"></script>
+<script src="sr.js"></script>
+
+ </body>
+</html>

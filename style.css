@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0.5%;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+header {
+    text-align: left;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    height: 100vh;
+}
+
+p {
+    text-align: right; 
+    margin: 0;
+    font-size: 10px;
+    color: red;
+    border: none; 
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+    border:  8px solid #0066CC;
+    height: 95vh;
+}
+
+.htl-image {
+  max-width: 0%; 
+  height: auto; 
+}
+
+  .activity-image {
+  max-width: 45px;
+  height: auto;
+  margin-top: -20px; 
+}
+    
+  h2 {
+  text-align: left;
+  
+}
+
+h3 {
+  margin-top: -10px; 
+  font-size: 14px;
+  color: #0066CC;
+}
+
+.special-paragraph {
+  text-align: center;
+  display: block;
+  font-size: 12px; 
+  font-family: 'Noto Sans Thai', sans-serif;
+  color: #0066CC;;
+  margin: -10px 0; 
+}
+
+ .select {
+  max-width: 85%;
+  height: auto;
+  margin-top: 30px; 
+}
+
+.htl2 {
+  max-width: 5%; 
+  height: auto; 
+}
+
+p.h42 {
+  margin-top: 10px; 
+  font-size: 13px;
+  color: #000;
+  text-align: left; 
+  font-weight: 500;
+
+}
+
+
+.red-text {
+      color: #DC143C;
+      font-size: 13px;
+      font-weight: 500;
+}
+
+p.h43 {
+  margin-top: 10px; 
+  font-size: 13px;
+  color: #000;
+  text-align: left; 
+  font-weight: 500;
+
+}
+
+
+.red-text2 {
+      color: #DC143C;
+      font-size: 13px;
+      font-weight: 800;
+}
+
+
+textarea {
+  
+}
+
+#uploadedImage {
+    max-width: 300px; /* ปรับขนาดตามต้องการ */
+    max-height: 300px; /* ปรับขนาดตามต้องการ */
+}
+
+button {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 50%;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0066FF;
+}
